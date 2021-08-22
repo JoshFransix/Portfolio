@@ -8,6 +8,11 @@
 
 body {
   background: #17202a;
+
+  ::selection {
+    background: rgba(193, 194, 223, 0.2);
+    color: #fff !important;
+  }
 }
 
 a {

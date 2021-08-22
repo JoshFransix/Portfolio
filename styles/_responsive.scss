@@ -21,12 +21,12 @@
   .nav-links {
     position: fixed;
     left: 0;
-    background: #fff;
+    background: #000;
     height: 100%;
     width: 100%;
     flex-direction: column;
     clip-path: circle(100px at 100% -10%);
-    -webkit-clip-path: circle(100px at 20% -10%);
+    -webkit-clip-path: circle(100px at 113% -10%);
     transition: all 1s ease-out;
     pointer-events: none;
     z-index: 200;
@@ -62,5 +62,27 @@
   }
   li.fade {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .logo {
+    flex: 1;
+  }
+  nav {
+    flex: 1;
+  }
+
+  #intro .intro-content {
+    grid-template-columns: 90% 20;
+  }
+  #intro .intro-content .intro-text {
+    margin-left: 0;
+    // height: 70%;
+  }
+
+  #intro .intro-content .intro-text p {
+    font-size: 100%;
+    width: 100%;
   }
 }
