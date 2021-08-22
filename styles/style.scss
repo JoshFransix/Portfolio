@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama&family=Rampart+One&family=Red+Hat+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #17202a;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  background: rgba(0, 218, 244, 0.05);
+  padding: 0.5rem 1rem;
+  border: 1px solid #00daf4;
+  border-radius: 5px;
+  color: #00daf4 !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: rgba(0, 218, 244, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+@import "home";
+@import "responsive";

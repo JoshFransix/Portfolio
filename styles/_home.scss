@@ -1,0 +1,146 @@
+#header {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  max-width: 80%;
+  margin: auto;
+}
+
+.logo {
+  flex: 1;
+  color: #00daf4;
+}
+
+.logo span {
+  color: #ce1678;
+}
+
+.logo,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  height: 10vh;
+  width: 100vw;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #00daf4;
+}
+
+.socials-1 {
+  position: fixed;
+  bottom: 50px;
+  /* width: 100%; */
+}
+
+.socials-1 hr {
+  transform: rotate(90deg);
+  left: -100px;
+  width: 100px;
+  background: #444;
+  outline: none;
+  border: 1px solid transparent;
+  margin-top: 3rem;
+}
+
+.socials-1 .icons {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socials-1 .icons a {
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+}
+
+.socials-1 .icons a:hover {
+  filter: drop-shadow(#00daf4 0px 0px 5px);
+  transition: all 0.3s;
+}
+
+.socials-1 .icons a i {
+  color: #8e8fbd;
+  font-size: 100%;
+}
+
+#intro {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  height: 90vh;
+  margin-top: 5rem;
+}
+
+#intro .intro-content {
+  display: grid;
+  grid-template-columns: 70% 50%;
+  font-family: "Red Hat Display", monospace;
+}
+
+#intro .intro-content .intro-text {
+  margin: auto;
+  margin-left: 4rem;
+  width: 100%;
+  height: 80%;
+  color: #c1c2df;
+}
+
+#intro .intro-content .intro-text h1 {
+  font-size: 80px;
+  font-family: "Georama", sans-serif;
+  margin: 0.7rem 0;
+  letter-spacing: 0.3rem;
+}
+
+#intro .intro-content .intro-text h4 {
+  color: #00daf4;
+  font-size: 15px;
+}
+
+#intro .intro-content .intro-text h2 {
+  font-size: 60px;
+  font-family: "Georama", sans-serif;
+  margin: 0.7rem 0;
+  opacity: 0.6;
+  letter-spacing: 0.2rem;
+}
+
+#intro .intro-content .intro-text p {
+  width: 60%;
+  line-height: 1.8;
+}
+
+#intro .intro-content .intro-text-btn a {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+}
+
+#intro .intro-content .intro-img {
+  width: 80%;
+  height: 100%;
+}
+
+#intro .intro-content .intro-img img {
+  width: 100%;
+}
