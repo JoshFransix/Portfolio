@@ -8,7 +8,9 @@
 
 body {
   background: #17202a;
-  transition: all;
+  transition: all 0.3s ease-in-out;
+  // overflow-x: hidden;
+  max-width: 100vw;
 
   ::selection {
     background: rgba(193, 194, 223, 0.2);

@@ -64,6 +64,34 @@
   li.fade {
     opacity: 1;
   }
+
+  .socials-1 {
+    display: none;
+  }
+
+  #intro {
+    width: 90%;
+  }
+
+  // #intro .intro-content .intro-text {
+  //   margin-left: 3rem;
+  // }
+
+  #intro .intro-content .intro-text h1 {
+    font-size: 300%;
+  }
+
+  #intro .intro-content .intro-text h2 {
+    // width: 100%;
+    font-size: 300%;
+  }
+
+  #intro .intro-content .intro-text h4 {
+    font-size: 16px;
+  }
+  #intro .intro-content .intro-text p {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1140px) {
@@ -71,7 +99,7 @@
     flex: 1;
   }
   nav {
-    flex: 1;
+    flex: 2;
   }
 
   #intro .intro-content {
@@ -92,5 +120,45 @@
   }
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 900px) {
+  #intro .intro-content .intro-text {
+    margin-left: 1.5rem;
+  }
 }
+
+@media screen and (max-width: 830px) {
+  #intro .intro-content .intro-text {
+    margin-left: 1rem;
+  }
+
+  // #intro .intro-content .intro-text h2 {
+  //   width: 100%;
+  // }
+
+  #intro .intro-content .intro-text p {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #intro .intro-content .intro-text h1 {
+    font-size: 250%;
+  }
+  #intro .intro-content .intro-text h2 {
+    font-size: 230%;
+    // width: 100%;
+  }
+
+  #intro .intro-content .intro-text p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #intro .intro-content .intro-text h1 {
+    font-size: 240%;
+  }
+  #intro .intro-content .intro-text h2 {
+    font-size: 220%;
+  }
+} ;
