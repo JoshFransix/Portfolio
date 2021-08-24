@@ -2,9 +2,10 @@
   .line {
     width: 30px;
     height: 3px;
-    background: white;
+    background: #00daf4;
     margin: 5px;
   }
+
   nav {
     position: relative;
   }
@@ -22,7 +23,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    background: #000;
+    backdrop-filter: blur(6px);
     height: 100%;
     width: 100%;
     flex-direction: column;
@@ -37,6 +38,7 @@
     -webkit-clip-path: circle(1000px at 90% -1%);
     pointer-events: all;
   }
+
   /* .landing {
     flex-direction: column;
   } */
