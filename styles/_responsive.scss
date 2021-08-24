@@ -23,7 +23,8 @@
     position: fixed;
     left: 0;
     top: 0;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(10px);
+    font-family: "Red Hat Display";
     height: 100%;
     width: 100%;
     flex-direction: column;
@@ -46,7 +47,11 @@
     opacity: 0;
   }
   .nav-links li a {
+    text-align: center;
+    margin: auto;
+    // display: block;
     font-size: 25px;
+    width: 100%;
   }
   .nav-links li:nth-child(1) {
     transition: all 0.5s ease 0.2s;
