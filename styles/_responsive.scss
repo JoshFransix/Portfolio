@@ -21,19 +21,20 @@
   .nav-links {
     position: fixed;
     left: 0;
+    top: 0;
     background: #000;
     height: 100%;
     width: 100%;
     flex-direction: column;
     clip-path: circle(100px at 100% -10%);
-    -webkit-clip-path: circle(100px at 113% -10%);
+    -webkit-clip-path: circle(100px at 100% -15%);
     transition: all 1s ease-out;
     pointer-events: none;
     z-index: 200;
   }
   .nav-links.open {
     clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -1%);
     pointer-events: all;
   }
   /* .landing {
@@ -74,15 +75,22 @@
   }
 
   #intro .intro-content {
-    grid-template-columns: 90% 20;
+    grid-template-columns: 100%;
   }
-  #intro .intro-content .intro-text {
-    margin-left: 0;
-    // height: 70%;
+  // #intro .intro-content .intro-text {
+  //   margin-left: 0;
+  //   height: 70%;
+  // }
+
+  #intro .intro-content .intro-img img {
+    display: none;
   }
 
   #intro .intro-content .intro-text p {
     font-size: 100%;
-    width: 100%;
+    width: 50%;
   }
+}
+
+@media screen and (max-width: 830px) {
 }
