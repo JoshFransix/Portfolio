@@ -23,12 +23,13 @@
     position: fixed;
     left: 0;
     top: 0;
-    backdrop-filter: blur(10px);
+    // backdrop-filter: blur(10px);
+    background: #1c2836;
     font-family: "Red Hat Display";
     height: 100%;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(100px at 100% -10%);
+    clip-path: circle(100px at 100% -10%) #000;
     -webkit-clip-path: circle(100px at 100% -15%);
     transition: all 1s ease-out;
     pointer-events: none;
