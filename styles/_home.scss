@@ -205,8 +205,9 @@ nav {
 }
 
 #about .about-content .about-body .about-tech h1 {
-  // align-self: center;
-  font-weight: 100;
+  -webkit-text-stroke: 0.1px #00daf4;
+  font-family: "Nunito Sans";
+  opacity: 0.4;
 }
 
 #about .about-content .about-body .about-tech .icons {

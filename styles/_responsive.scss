@@ -98,11 +98,15 @@
   }
 
   #about {
-    width: 90%;
+    width: 80% !important;
   }
 
   #about .about-content .about-body {
-    grid-template-columns: 100%;
+    grid-template-columns: 100% !important;
+  }
+
+  #about .about-content .about-body .about-tech .icons {
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 
@@ -187,13 +191,20 @@
   #intro .intro-content .intro-text p {
     width: 90%;
   }
+
+  #about .about-content .about-header .linee {
+    width: 100px;
+  }
 }
 
 @media screen and (max-width: 530px) {
-  #intro .intro-content .intro-text h1 {
-    font-size: 240%;
+  #intro .intro-content .intro-text {
+    height: 90%;
   }
-  #intro .intro-content .intro-text h2 {
-    font-size: 220%;
-  }
+  // #intro .intro-content .intro-text h1 {
+  //   font-size: 240%;
+  // }
+  // #intro .intro-content .intro-text h2 {
+  //   font-size: 220%;
+  // }
 } ;
