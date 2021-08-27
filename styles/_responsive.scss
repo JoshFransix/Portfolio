@@ -96,8 +96,13 @@
   #intro .intro-content .intro-text h4 {
     font-size: 16px;
   }
-  #intro .intro-content .intro-text p {
-    font-size: 20px;
+
+  #about {
+    width: 90%;
+  }
+
+  #about .about-content .about-body {
+    grid-template-columns: 100%;
   }
 }
 
@@ -122,14 +127,37 @@
   }
 
   #intro .intro-content .intro-text p {
-    font-size: 100%;
     width: 50%;
+  }
+
+  #about {
+    width: 75%;
+  }
+
+  #about .about-content .about-body {
+    grid-gap: 1rem;
   }
 }
 
 @media screen and (max-width: 900px) {
   #intro .intro-content .intro-text {
     margin-left: 1.5rem;
+  }
+
+  #about {
+    width: 75%;
+  }
+
+  #about .about-content .about-header .linee {
+    width: 300px;
+  }
+
+  #about .about-content .about-body {
+    grid-template-columns: 60% 40%;
+  }
+
+  #about .about-content .about-body .about-tech .icons {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

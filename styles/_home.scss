@@ -1,3 +1,5 @@
+// HOME AND INTRO SECTION
+
 #header {
   display: flex;
   align-items: center;
@@ -15,7 +17,7 @@
   // width: 100%;
   flex: 2;
   color: #00daf4;
-  font-family: "Red Hat Display";
+  font-family: "Nunito";
 }
 
 .logo span {
@@ -29,7 +31,7 @@ nav {
 }
 
 .nav-links {
-  font-family: "Red Hat Display";
+  font-family: "Nunito Sans";
   display: flex;
   list-style: none;
   // width: 50%;
@@ -101,7 +103,7 @@ nav {
 #intro .intro-content {
   display: grid;
   grid-template-columns: 70% 50%;
-  font-family: "Red Hat Display", monospace;
+  font-family: "Nunito Sans", monospace;
 }
 
 #intro .intro-content .intro-text {
@@ -109,12 +111,13 @@ nav {
   margin-left: 4rem;
   width: 100%;
   height: 80%;
+  font-weight: bolder;
 }
 
 #intro .intro-content .intro-text h1 {
   color: #c1c2df;
   font-size: 60px;
-  font-family: "Georama", sans-serif;
+  // font-family: "Georama", sans-serif;
   margin: 0.7rem 0;
   letter-spacing: 0.1rem;
 }
@@ -122,29 +125,28 @@ nav {
 #intro .intro-content .intro-text h4 {
   color: #00daf4;
   font-size: 15px;
+  font-family: "Space Mono", monospace;
 }
 
 #intro .intro-content .intro-text h2 {
   color: #c1c2df;
   font-size: 60px;
-  font-family: "Georama", sans-serif;
+  // font-family: "Georama", sans-serif;
   margin: 0.7rem 0;
   opacity: 0.7;
   letter-spacing: 0.2rem;
 }
 
 #intro .intro-content .intro-text p {
-  color: #c1c2df;
-  font-size: 100%;
   width: 60%;
-  line-height: 1.8;
-  opacity: 0.7;
+  // line-height: 1.8;
 }
 
 #intro .intro-content .intro-text-btn a {
   margin-top: 2rem;
   padding: 1rem 2rem;
   color: #00daf4 !important;
+  font-family: "Space Mono", monospace;
   background: rgba(0, 218, 244, 0.01) !important;
 
   :hover {
@@ -160,4 +162,91 @@ nav {
 #intro .intro-content .intro-img img {
   width: 100%;
   pointer-events: none;
+}
+
+// ABOUT SECTION
+#about {
+  // display: none;
+  position: relative;
+  width: 60%;
+  margin: auto;
+  height: 90vh;
+  font-family: "Nunito Sans";
+}
+
+#about .about-content .about-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+#about .about-content .about-header h3 {
+  color: #c1c2df;
+  font-size: 32px;
+}
+
+#about .about-content .about-header .linee {
+  width: 600px;
+}
+
+#about .about-content .about-body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 3rem;
+  // font-family: "Nunito", monospace;
+}
+
+#about .about-content .about-body .about-tech {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about .about-content .about-body .about-tech h1 {
+  // align-self: center;
+  font-weight: 100;
+}
+
+#about .about-content .about-body .about-tech .icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-row-align: center;
+  grid-gap: 2rem 0rem;
+  margin-top: 2rem;
+  // align-items: center;
+}
+
+#about .about-content .about-body .about-tech .html {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+}
+
+#about .about-content .about-body .about-tech .skill-icon {
+  color: #00daf4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  // text-align: center;
+  font-size: 30px;
+  // padding: 10px;
+  background: rgba(23, 32, 42, 0.25);
+  box-shadow: inset 0 8px 32px 0 rgba(0, 218, 244, 0.07);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#about .about-content .about-body .about-tech span {
+  // display: none;
+  color: #c1c2df;
+  font-family: "Nunito";
+  font-size: 20px;
+  text-align: center;
 }
