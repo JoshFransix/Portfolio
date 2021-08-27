@@ -105,6 +105,11 @@
     grid-template-columns: 100% !important;
   }
 
+  #about .about-content .about-body .about-tech {
+    // align-items: flex-start;
+    margin-top: 4rem;
+  }
+
   #about .about-content .about-body .about-tech .icons {
     grid-template-columns: repeat(3, 1fr) !important;
   }
@@ -199,7 +204,7 @@
 
 @media screen and (max-width: 530px) {
   #intro .intro-content .intro-text {
-    height: 90%;
+    height: 100%;
   }
 
   .sub-header {
