@@ -223,10 +223,11 @@
   .sub-header {
     font-size: 40px;
   }
-  // #intro .intro-content .intro-text h1 {
-  //   font-size: 240%;
-  // }
-  // #intro .intro-content .intro-text h2 {
-  //   font-size: 220%;
-  // }
+  #intro .intro-content .intro-text h1 {
+    font-size: 200%;
+    margin-top: 0.5rem;
+  }
+  #intro .intro-content .intro-text h2 {
+    font-size: 200%;
+  }
 } ;
