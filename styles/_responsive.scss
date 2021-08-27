@@ -14,9 +14,16 @@
     position: absolute;
     cursor: pointer;
     right: 5%;
-    top: 50%;
+    top: 0%;
     transform: translate(-5%, -50%);
     z-index: 2000;
+  }
+
+  .hamburger.hamburger-open {
+    position: fixed;
+    right: 8%;
+    top: 5%;
+    // transform: translate(-5%, -50%);
   }
 
   .nav-links {
@@ -213,7 +220,7 @@
 
   #intro .intro-content .intro-text {
     height: 100%;
-    // font-size: 100%;
+    margin-left: 2%;
   }
 
   #intro .intro-content .intro-text p {
