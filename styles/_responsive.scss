@@ -203,8 +203,21 @@
 }
 
 @media screen and (max-width: 530px) {
+  #header {
+    width: 90%;
+  }
+
+  #intro {
+    width: 90%;
+  }
+
   #intro .intro-content .intro-text {
     height: 100%;
+    // font-size: 100%;
+  }
+
+  #intro .intro-content .intro-text p {
+    margin: 2rem 0;
   }
 
   .sub-header {
