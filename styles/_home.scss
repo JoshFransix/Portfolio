@@ -96,7 +96,7 @@ nav {
   position: relative;
   width: 80%;
   margin: auto;
-  height: 90vh;
+  // height: 90vh;
   margin-top: 5rem;
 }
 
@@ -170,11 +170,13 @@ nav {
   position: relative;
   width: 60%;
   margin: auto;
-  height: 90vh;
+  // height: 90vh;
+  margin-top: 10rem;
+  padding-top: 4rem;
   font-family: "Nunito Sans";
 }
 
-#about .about-content .about-header {
+.about-header {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -182,13 +184,16 @@ nav {
   margin-bottom: 3rem;
 }
 
-#about .about-content .about-header h3 {
+.about-header h3 {
+  flex: 1.5;
+  width: 100%;
   color: #c1c2df;
   font-size: 32px;
 }
 
-#about .about-content .about-header .linee {
-  width: 600px;
+.about-header .linee {
+  flex: 1;
+  // width: 10%;
 }
 
 #about .about-content .about-body {
@@ -248,4 +253,15 @@ nav {
   font-family: "Nunito";
   font-size: 20px;
   text-align: center;
+}
+
+#projects {
+  // display: none;
+  position: relative;
+  width: 60%;
+  margin: auto;
+  height: 90vh;
+  font-family: "Nunito Sans";
+  margin-top: 10rem;
+  padding-top: 4rem;
 }

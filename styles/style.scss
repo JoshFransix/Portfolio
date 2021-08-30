@@ -53,6 +53,8 @@ ul {
 }
 
 .sub-header {
+  flex: 1;
+  text-align: right;
   font-family: "Space Mono", sans-serif;
   font-size: 50px;
   text-transform: uppercase;
@@ -67,9 +69,9 @@ ul {
 }
 
 .linee {
-  position: absolute;
-  top: 35px;
-  left: 110px;
+  // position: absolute;
+  // top: 355px;
+  // left: 110px;
   // margin: auto;
   transform: rotate(180deg);
   outline: none;

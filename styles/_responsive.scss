@@ -89,7 +89,7 @@
 
   #intro {
     width: 90%;
-    height: 70vh;
+    // height: 70vh;
   }
 
   // #intro .intro-content .intro-text {
@@ -111,7 +111,6 @@
 
   #about {
     width: 80% !important;
-    padding-top: 4rem;
   }
 
   #about .about-content .about-body {
@@ -159,6 +158,10 @@
   #about .about-content .about-body {
     grid-gap: 1rem;
   }
+
+  #projects {
+    width: 75%;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -170,7 +173,7 @@
     width: 75%;
   }
 
-  #about .about-content .about-header .linee {
+  .linee {
     width: 300px;
   }
 
@@ -180,6 +183,10 @@
 
   #about .about-content .about-body .about-tech .icons {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #projects {
+    width: 75%;
   }
 }
 
@@ -210,8 +217,8 @@
     width: 90%;
   }
 
-  #about .about-content .about-header .linee {
-    width: 100px;
+  .linee {
+    width: 10px;
   }
 }
 
@@ -234,7 +241,7 @@
   }
 
   .sub-header {
-    font-size: 40px;
+    display: none;
   }
   #intro .intro-content .intro-text h1 {
     font-size: 200%;
@@ -242,5 +249,13 @@
   }
   #intro .intro-content .intro-text h2 {
     font-size: 200%;
+  }
+
+  #about {
+    width: 90%;
+  }
+
+  #projects {
+    width: 90%;
   }
 } ;
