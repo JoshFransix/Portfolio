@@ -13,4 +13,10 @@ hamburger.addEventListener("click", () => {
   });
 });
 
+// var scrollEventHandler = function () {
+//   window.scroll(0, window.pageYOffset);
+// };
+
+// window.addEventListener("scroll", scrollEventHandler, false);
+
 // return Math.round(Math.random()) - 0.5;
