@@ -6,9 +6,9 @@
     margin: 5px;
   }
 
-  .line .line-open {
-    transform: rotate(20deg);
-  }
+  // .line .line-open {
+  //   transform: rotate(20deg);
+  // }
 
   nav {
     position: relative;
@@ -24,9 +24,9 @@
   }
 
   .hamburger.hamburger-open {
-    position: fixed;
-    right: 8%;
-    top: 5%;
+    position: absolute;
+    // right: 8%;
+    // top: 5%;
     // transform: translate(-5%, -50%);
   }
 
@@ -125,6 +125,14 @@
   #about .about-content .about-body .about-tech .icons {
     grid-template-columns: repeat(3, 1fr) !important;
   }
+
+  .section-header-1::after {
+    width: 260px;
+  }
+
+  .section-header-2::after {
+    width: 30px;
+  }
 }
 
 @media screen and (max-width: 1140px) {
@@ -162,8 +170,11 @@
   #projects {
     width: 75%;
   }
-}
 
+  .section-sub-header {
+    display: none;
+  }
+}
 @media screen and (max-width: 900px) {
   #intro .intro-content .intro-text {
     margin-left: 1.5rem;
@@ -173,9 +184,9 @@
     width: 75%;
   }
 
-  .linee {
-    width: 300px;
-  }
+  // .linee {
+  //   width: 300px;
+  // }
 
   #about .about-content .about-body {
     grid-template-columns: 60% 40%;
@@ -202,6 +213,22 @@
   #intro .intro-content .intro-text p {
     width: 70%;
   }
+
+  .section-header {
+    font-size: 26px;
+  }
+
+  .section-header:nth-child(2)::after {
+    width: 200px;
+  }
+
+  .section-header-1::after {
+    width: 260px;
+  }
+
+  .section-header-2::after {
+    width: 70px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -217,8 +244,12 @@
     width: 90%;
   }
 
-  .linee {
-    width: 10px;
+  .section-header-1::after {
+    width: 280px;
+  }
+
+  .section-header-2::after {
+    width: 140px;
   }
 }
 
@@ -240,9 +271,6 @@
     margin: 0.5rem 0;
   }
 
-  .sub-header {
-    display: none;
-  }
   #intro .intro-content .intro-text h1 {
     font-size: 200%;
     margin-top: 0.5rem;
@@ -258,4 +286,4 @@
   #projects {
     width: 90%;
   }
-} ;
+}

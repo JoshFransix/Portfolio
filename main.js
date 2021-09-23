@@ -12,3 +12,5 @@ hamburger.addEventListener("click", () => {
     link.classList.toggle("fade");
   });
 });
+
+// return Math.round(Math.random()) - 0.5;
