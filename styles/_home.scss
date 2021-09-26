@@ -259,10 +259,110 @@ nav {
 #projects {
   // display: none;
   position: relative;
-  width: 60%;
+  width: 65%;
   margin: auto;
   height: 90vh;
   font-family: "Nunito Sans";
   margin-top: 10rem;
   padding-top: 4rem;
+}
+
+#projects .projects-body {
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#projects .projects-body .projects-body-img {
+  position: absolute;
+  // display: inl ine;
+  width: 100%;
+  // height: 90%;
+}
+
+#projects .projects-body .projects-body-img a img {
+  position: relative;
+  pointer-events: none;
+  display: inline-block;
+  width: 580px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+// #projects .projects-body .projects-body-img a img::after {
+//   position: absolute;
+//   content: "";
+//   width: 30px;
+//   height: 30px;
+//   background: red;
+// }
+
+#projects .projects-body-info {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+  // width: -130%;
+  text-align: right;
+}
+
+#projects .projects-body-info .projects-info-title {
+  display: inline-block;
+  // justify-content: flex-end;
+  // align-items: flex-start;
+  // margin: auto;
+  // width: 100px;
+  color: var(--primary-color);
+  font-size: 28px;
+  transition: all 0.2s ease-in-out;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+#projects .projects-body-info a:hover {
+  color: var(--secondary-color);
+}
+
+#projects .projects-body-info .paragraph {
+  // position: relative;
+  // margin: auto;
+  background: rgb(24, 35, 48);
+  opacity: 1;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.3);
+  // width: 700px;
+}
+
+#projects .projects-body-info .projects-code-language {
+  // margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  // align-items: center;
+  margin: 1rem 0;
+  opacity: 0.6;
+  color: #c1c2df;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: "Space Mono", monospace;
+}
+
+#projects .projects-body-info .projects-code-language h5 {
+  margin-left: 1rem;
+}
+
+#projects .projects-body-info .projects-redirect a {
+  display: inline;
+  color: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+  margin-left: 1rem;
+  font-size: 20px;
+}
+
+#projects .projects-body-info .projects-redirect a:hover {
+  color: var(--secondary-color);
 }
