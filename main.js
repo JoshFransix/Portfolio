@@ -14,10 +14,15 @@ hamburger.addEventListener("click", () => {
 });
 
 const cursor = document.querySelector(".cursor");
+// const allLinks = document.querySelectorAll("a");
 document.addEventListener("mousemove", (e) => {
   cursor.style.left = e.pageX + "px";
   cursor.style.top = e.pageY + "px";
 });
+
+// allLinks.addEventListener("mouseover", (e) => {
+//   e.style.color = "red";
+// });
 
 // var scrollEventHandler = function () {
 //   window.scroll(0, window.pageYOffset);
