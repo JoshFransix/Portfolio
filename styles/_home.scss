@@ -426,9 +426,10 @@ nav {
 }
 
 #projects .second-project .projects-body-info .projects-code-language {
-  // position: absolute;
+  // position: relative;
   // margin: auto;
   display: flex;
+  // width: 10%;
   // justify-content: flex-start;
   // align-items: flex-end;
   margin: 1rem 0;
