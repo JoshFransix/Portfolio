@@ -349,7 +349,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 80%;
+  height: 100%;
   width: 50%;
   text-align: left;
   z-index: 1;
@@ -392,7 +392,7 @@ nav {
   padding: 2rem;
   border-radius: 5px;
   box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.3);
-  // width: 60%;
+  // width: 100%;
   // text-align: left;
 }
 #projects .second-project .projects-body-info .paragraph {
@@ -421,6 +421,7 @@ nav {
   font-weight: 100;
   font-size: 16px;
   line-height: 25px;
+  width: 100%;
   font-family: "Space Mono", monospace;
 }
 
@@ -428,14 +429,15 @@ nav {
   // position: absolute;
   // margin: auto;
   display: flex;
-  justify-content: flex-start;
-  // align-items: center;
+  // justify-content: flex-start;
+  // align-items: flex-end;
   margin: 1rem 0;
   opacity: 0.6;
   color: #c1c2df;
   font-weight: 100;
   font-size: 16px;
   line-height: 25px;
+
   font-family: "Space Mono", monospace;
 }
 
