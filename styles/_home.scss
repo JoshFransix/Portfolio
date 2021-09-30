@@ -81,17 +81,17 @@ nav {
 
 .socials-1 .icons a {
   margin-bottom: 2rem;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .socials-1 .icons a:hover {
   filter: drop-shadow(#00daf4 0px 0px 5px);
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .socials-1 .icons a i {
   color: #8e8fbd;
-  font-size: 100%;
+  font-size: 120%;
 }
 
 #intro {
@@ -466,4 +466,136 @@ nav {
 
 #projects .projects-body-info .projects-redirect a:hover {
   color: var(--secondary-color);
+}
+
+#contact {
+  // display: none;
+  position: relative;
+  width: 65%;
+  margin: auto;
+  // height: 100vh;
+  font-family: "Nunito Sans";
+  margin-top: 10rem;
+  padding-top: 4rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact .contact-body {
+  // position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // grid-gap: 3rem;
+}
+
+#contact .contact-content .contact-img {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  // width: 100%;
+  // height: 100%;
+}
+
+#contact .contact-content .contact-img img {
+  position: absolute;
+  margin: auto;
+  top: -10%;
+  right: -10%;
+  width: 105%;
+  height: 90%;
+  pointer-events: none;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact .contact-body .contact-form {
+  width: 100%;
+}
+
+#contact .contact-body .contact-form div {
+  margin-bottom: 2rem;
+}
+
+#contact .contact-body .contact-form label {
+  display: block;
+}
+
+#contact .contact-body .contact-form input,
+#contact .contact-body .contact-form textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 0.01px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  // background: rgb(24, 35, 48);
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #fff;
+}
+
+#contact .contact-body .contact-form input:focus,
+#contact .contact-body .contact-form textarea:focus {
+  transition: all 0.3s ease-in-out;
+  border: 0.01px solid #00daf4;
+  box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.2);
+}
+
+#contact .contact-body .contact-form button {
+  cursor: pointer;
+  font-family: "Space Mono", sans-serif;
+  // font-size: 16px;
+}
+
+#footer {
+  // display: none;
+  position: relative;
+  width: 35%;
+  margin: auto;
+  // height: 30vh;
+  font-family: "Nunito Sans";
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding-top: 4rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.socials-2 .icons {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+}
+
+.socials-2 .icons a {
+  margin-bottom: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.socials-2 .icons a:hover {
+  filter: drop-shadow(#00daf4 0px 0px 5px);
+  transition: all 0.3s ease-in-out;
+}
+
+.socials-2 .icons a i {
+  color: #8e8fbd;
+  font-size: 120%;
+}
+
+#footer .footer-text {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  font-size: 12px;
+  font-family: "Space Mono";
+}
+
+#footer .footer-text a {
+  color: #c1c2df;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+#footer .footer-text a:hover {
+  color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
 }

@@ -50,7 +50,7 @@ ul {
 .btn {
   background: rgba(0, 218, 244, 0.05);
   padding: 0.5rem 1rem;
-  border: 1px solid #00daf4;
+  border: 1px solid var(--secondary-color);
   border-radius: 5px;
   color: #00daf4 !important;
   transition: all 0.2s ease-in-out;
