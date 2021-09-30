@@ -213,18 +213,18 @@
         <div class="contact-body">
           
           <div class="contact-form">
-            <form>
+            <form action="POST" data-netlify="true">
               <div class="form-name">
               <label for="name">Your Name</label>
-              <input type="text">
+              <input class="tilt" type="text">
             </div>
               <div class="form-email">
               <label for="email">Your Email</label>
-              <input type="email">
+              <input class="tilt" type="email">
             </div>
               <div class="form-message">
               <label for="name">Your Message</label>
-              <textarea id="" cols="30" rows="10"></textarea>
+              <textarea class="tilt" id="" cols="30" rows="10" data-tilt data-tilt-glare data-tilt-max-glare="0.8"></textarea>
             </div>
             <button class="btn">Send Message</button>
             </form>
@@ -270,5 +270,7 @@
   <script src="./main.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+ 
 </body>
 </html>
