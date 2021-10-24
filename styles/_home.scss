@@ -307,8 +307,7 @@ nav {
     center/cover;
 }
 #projects .projects-body .ptype-3 {
-  background: url(../media/img/pedro-lastra-Nyvq2juw4_o-unsplash.jpg) no-repeat
-    center center/cover;
+  background: url(../media/img/mysite.png) no-repeat center center/cover;
 }
 
 #projects .projects-body .projects-body-img a {
@@ -325,6 +324,7 @@ nav {
 
 #projects .projects-body .projects-body-img a:hover {
   background: rgba(0, 218, 244, 0);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #projects .first-project .projects-body-info {
