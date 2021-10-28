@@ -39,9 +39,9 @@ a {
   text-decoration: none;
 }
 
-a:hover ~ .cursor {
-  transform: scale(6) !important;
-}
+// a:hover ~ .cursor {
+//   transform: scale(6) !important;
+// }
 
 ul {
   list-style: none;
@@ -67,19 +67,19 @@ ul {
 //   margin-right: auto;
 // }
 
-.cursor {
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: transparent;
-  border: 1px solid #00daf4;
-  transition: 0.1s;
-  // transform: translate(-50%, -50%);
-  // pointer-events: none;
-  mix-blend-mode: difference;
-  // z-index: 1;
-}
+// .cursor {
+//   position: fixed;
+//   width: 20px;
+//   height: 20px;
+//   border-radius: 50%;
+//   background: transparent;
+//   border: 1px solid #00daf4;
+//   transition: 0.1s;
+//   // transform: translate(-50%, -50%);
+//   // pointer-events: none;
+//   mix-blend-mode: difference;
+//   // z-index: 1;
+// }
 
 .p-1 {
   font-size: 17px;
@@ -110,21 +110,6 @@ ul {
   -ms-user-select: none;
   user-select: none;
 }
-
-// .linee {
-//   position: absolute;
-//   top: 50%;
-//   // left: 10%;
-//   // margin: auto;
-//   transform: rotate(180deg);
-//   // outline: none;
-//   // border: none;
-//   // background: #c1c2df;
-//   background: rgba(0, 0, 0, 0.9);
-//   height: 10.2px;
-//   width: 100%;
-//   // opacity: 0.3;
-// }
 
 .section-header::after {
   position: absolute;

@@ -1,4 +1,7 @@
 @media screen and (max-width: 768px) {
+  #header {
+    padding-left: 2rem;
+  }
   .line {
     width: 30px;
     height: 3px;
@@ -19,15 +22,15 @@
   .hamburger {
     position: absolute;
     cursor: pointer;
-    right: 0%;
+    right: 15%;
     top: 0%;
     transform: translate(-5%, -50%);
     z-index: 2000;
   }
 
   .hamburger.hamburger-open {
-    position: fixed;
-    right: 5%;
+    position: absolute;
+    right: 15%;
     top: 5%;
     // transform: translate(-5%, -50%);
   }
@@ -398,7 +401,7 @@
 
 @media screen and (max-width: 530px) {
   #header {
-    width: 90%;
+    width: 100vw;
   }
 
   #intro {
@@ -406,7 +409,7 @@
   }
 
   #intro .intro-content .intro-text {
-    height: 100%;
+    height: 60%;
     margin-left: 2%;
   }
 
