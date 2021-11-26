@@ -12,16 +12,20 @@ hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
   hamburger.classList.toggle("hamburger-open");
+  // body.classList.toggle("lock-scroll");
   navMenu.classList.toggle("open");
-  navLinks.forEach((navLink) => {
-    navLink.classList.toggle("fade");
+
+  navLinks.forEach((navLinks) => {
+    navLinks.classList.toggle("fade");
   });
+  // navLinks.classList.add("active");
 }
 
 navLinks.forEach((n) => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
   hamburger.classList.remove("hamburger-open");
+  body.classList.remove("lock-scroll");
   navMenu.classList.remove("open");
   navLinks.forEach((navLink) => {
     navLink.classList.remove("fade");
