@@ -39,17 +39,32 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-document.querySelector(".test-btn").addEventListener("click", loadText);
+// document.querySelector(".test-btn").addEventListener("click", loadText);
 
-function loadText() {
-  const xhr = new XMLHttpRequest();
+// function loadText() {
+//   const xhr = new XMLHttpRequest();
 
-  xhr.open("GET", "index.htm", true);
+//   xhr.open("GET", ``, true);
 
-  xhr.onload = function () {
-    if (this.status === 200) {
-      console.log("123");
-    }
-  };
-  xhr.send();
+//   xhr.onload = function () {
+//     if (this.status === 200) {
+//       console.log("123");
+//     }
+//   };
+//   xhr.send();
+// }
+
+const formInput = document.querySelector(".form-input");
+const formMessage = document.querySelector(".formMessage");
+const formBtn = document.querySelector(".formBtn");
+
+formBtn.addEventListener("click", validateInput);
+
+function validateInput(e) {
+  let output = "";
+  if (formInput.value === "") {
+    output = `<h3>Please fill in the form correctly</h3>`;
+    formMessage.innerHTML = output;
+  }
+  e.preventDefault();
 }
