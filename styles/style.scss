@@ -50,6 +50,25 @@ body {
   color: #c1c2df;
 }
 
+body.lock-scroll {
+  height: 100%;
+}
+
+// body.bg-blur {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background: transparent;
+//   height: 100%;
+//   width: 100%;
+//   z-index: -100;
+// }
+
+// .bg-blur.open {
+//   background: #00daf4;
+//   z-index: 2000;
+// }
+
 a {
   display: inline-block;
   text-decoration: none;

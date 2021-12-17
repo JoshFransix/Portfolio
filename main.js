@@ -8,11 +8,14 @@ const navLinks = document.querySelectorAll(".nav-item");
 
 const header = document.querySelector("#header");
 
+const blurBg = document.querySelector(".bg-blur");
+
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
   hamburger.classList.toggle("hamburger-open");
   // body.classList.toggle("lock-scroll");
+  // blurBg.classList.toggle("bg-blur-open");
   navMenu.classList.toggle("open");
 
   navLinks.forEach((navLinks) => {
@@ -35,3 +38,18 @@ function closeMenu() {
 window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
+
+document.querySelector(".test-btn").addEventListener("click", loadText);
+
+function loadText() {
+  const xhr = new XMLHttpRequest();
+
+  xhr.open("GET", "index.htm", true);
+
+  xhr.onload = function () {
+    if (this.status === 200) {
+      console.log("123");
+    }
+  };
+  xhr.send();
+}
