@@ -54,17 +54,20 @@ window.addEventListener("scroll", function () {
 //   xhr.send();
 // }
 
-const formInput = document.querySelector(".form-input");
-const formMessage = document.querySelector(".formMessage");
-const formBtn = document.querySelector(".formBtn");
+// const formInput = document.getElementByClassName("form-input");
+// const formMessage = document.querySelector(".formMessage");
+// const formBtn = document.querySelector(".formBtn");
 
-formBtn.addEventListener("click", validateInput);
+// formBtn.addEventListener("click", validateInput);
 
-function validateInput(e) {
-  let output = "";
-  if (formInput.value === "") {
-    output = `<h3>Please fill in the form correctly</h3>`;
-    formMessage.innerHTML = output;
-  }
-  e.preventDefault();
-}
+// function validateInput(e) {
+//   let output = "";
+//   formInput.forEach(function () {
+//     if (formInput.value === "") {
+//       formInput.style.borderColor = "#ce1678";
+//       output = `<h3>Please fill in the form correctly</h3>`;
+//       formMessage.innerHTML = output;
+//     }
+//     e.preventDefault();
+//   });
+// }
