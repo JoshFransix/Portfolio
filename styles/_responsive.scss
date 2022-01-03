@@ -169,12 +169,14 @@
   #projects .first-project .projects-body-info {
     text-align: left;
     left: -20%;
+    top: 10%;
     width: 100%;
     height: 100%;
   }
   #projects .second-project .projects-body-info {
     text-align: left;
     left: 5%;
+    top: 10%;
     width: 100%;
     height: 100%;
   }
@@ -189,6 +191,7 @@
 
   #projects .first-project .projects-body-info .projects-code-language {
     justify-content: flex-start;
+    // width: 100% !important;
   }
 
   #projects .first-project .projects-body-info .projects-code-language h5 {
@@ -430,7 +433,13 @@
   }
 
   #projects {
-    width: 90%;
+    width: 20%;
+
+    .projects-body-info {
+      .project-info-title {
+        display: none;
+      }
+    }
   }
 
   #footer {
