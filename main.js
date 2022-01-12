@@ -41,18 +41,7 @@ window.addEventListener("scroll", function () {
 
 // document.querySelector(".test-btn").addEventListener("click", loadText);
 
-// function loadText() {
-//   const xhr = new XMLHttpRequest();
 
-//   xhr.open("GET", ``, true);
-
-//   xhr.onload = function () {
-//     if (this.status === 200) {
-//       console.log("123");
-//     }
-//   };
-//   xhr.send();
-// }
 
 // const formInput = document.getElementByClassName("form-input");
 // const formMessage = document.querySelector(".formMessage");
