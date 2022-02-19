@@ -20,7 +20,6 @@ function mobileMenu() {
   navLinks.forEach((navLinks) => {
     navLinks.classList.toggle("fade");
   });
-  // navLinks.classList.add("active");
 }
 
 navLinks.forEach((n) => n.addEventListener("click", closeMenu));
@@ -39,8 +38,6 @@ window.addEventListener("scroll", function () {
 });
 
 // document.querySelector(".test-btn").addEventListener("click", loadText);
-
-
 
 // const formInput = document.getElementByClassName("form-input");
 // const formMessage = document.querySelector(".formMessage");
