@@ -14,7 +14,6 @@ hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
   hamburger.classList.toggle("hamburger-open");
-  // blurBg.classList.toggle("bg-blur-open");
   navMenu.classList.toggle("open");
 
   navLinks.forEach((navLinks) => {
