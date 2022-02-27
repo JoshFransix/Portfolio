@@ -36,7 +36,7 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-// document.querySelector(".test-btn").addEventListener("click", loadText);
+
 
 // const formInput = document.getElementByClassName("form-input");
 // const formMessage = document.querySelector(".formMessage");
