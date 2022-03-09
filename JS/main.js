@@ -14,7 +14,6 @@ hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
   hamburger.classList.toggle("hamburger-open");
-  // blurBg.classList.toggle("bg-blur-open");
   navMenu.classList.toggle("open");
 
   navLinks.forEach((navLinks) => {
@@ -37,7 +36,7 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-// document.querySelector(".test-btn").addEventListener("click", loadText);
+
 
 // const formInput = document.getElementByClassName("form-input");
 // const formMessage = document.querySelector(".formMessage");
