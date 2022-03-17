@@ -39,7 +39,7 @@ window.addEventListener("scroll", function () {
 
 
 
-// const formMessage = document.querySelector(".formMessage");
+
 // const formBtn = document.querySelector(".formBtn");
 
 // formBtn.addEventListener("click", validateInput);
