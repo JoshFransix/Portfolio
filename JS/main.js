@@ -32,13 +32,36 @@ function closeMenu() {
   });
 }
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", () => {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
+const faders = document.querySelectorAll(".fade-in");
+const sliders = document.querySelectorAll(".slide-in");
 
+const appearOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px 10px 0px",
+};
 
+const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+}, appearOptions);
 
+faders.forEach((fader) => {
+  appearOnScroll.observe(fader);
+});
+
+sliders.forEach((slider) => {
+  appearOnScroll.observe(slider);
+});
 
 // const formBtn = document.querySelector(".formBtn");
 

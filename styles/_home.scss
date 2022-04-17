@@ -633,3 +633,31 @@ nav {
   color: #ce1678;
   transition: all 0.3s ease-in-out;
 }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left {
+  transform: translateX(-50%);
+}
+.from-right {
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 0.9s ease-in, transform 0.9s ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+  opacity: 1;
+}

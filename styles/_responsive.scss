@@ -47,13 +47,13 @@
     // justify-content: space-between;
     // clip-path: circle(100px at 100% -15%) #000;
     -webkit-clip-path: circle(100px at 120% -15%);
-    transition: all 1s ease-out;
+    transition: all 0.7s ease-out;
     pointer-events: none;
     z-index: 3000;
   }
   .nav-links.open {
     clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -1%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
   }
   /* .landing {
