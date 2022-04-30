@@ -41,8 +41,8 @@
 
   .hamburger {
     opacity: 0;
-    animation: menuAnimation 1.5s ease-in-out forwards;
-    animation-delay: menuAnimation 0.1s;
+    animation: hamburgerAnimation 1.5s ease-in-out forwards;
+    animation-delay: hamburgerAnimation 0.1s;
     position: absolute;
     cursor: pointer;
     right: 10%;
@@ -223,6 +223,14 @@
     // width: 200px;
   }
 
+  #moreProjects {
+    width: 85% !important;
+
+    .staticProjects {
+      grid-template-columns: 100% !important;
+    }
+  }
+
   #contact .contact-body {
     grid-template-columns: 100%;
   }
@@ -301,6 +309,14 @@
     width: 70%;
   }
 
+  #moreProjects {
+    width: 78%;
+
+    .staticProjects {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   #contact {
     width: 80%;
   }
@@ -339,6 +355,10 @@
   #projects .projects-body .projects-body-img {
     width: 65%;
     height: 80%;
+  }
+
+  #moreProjects {
+    width: 75%;
   }
 
   #contact .contact-content .contact-img img {

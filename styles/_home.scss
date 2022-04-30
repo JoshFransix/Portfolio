@@ -525,6 +525,85 @@ nav {
   color: var(--secondary-color);
 }
 
+#moreProjects {
+  margin: auto;
+  width: 75%;
+  transition: all 0.3s ease-out;
+
+  h1 {
+    text-align: center;
+    margin-top: 9rem;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .staticProjects-content {
+    display: none;
+    transition: all 0.3s ease-out;
+  }
+  .staticProjects-content.show {
+    display: block;
+    transition: all 0.3s ease-out;
+  }
+  .staticProjects {
+    font-family: "Poppins", sans-serif;
+    margin-top: 3rem;
+    opacity: 0;
+    animation: textanimation 0.8s ease-in-out forwards;
+    // animation-delay: textanimation 0.04s;
+    transition: all 0.3s ease-out;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    grid-gap: 1rem 1rem;
+    align-items: center;
+    .staticProject {
+      color: #fff;
+      position: relative;
+      transition: all 0.3s ease-out;
+      // background: rgba(0, 218, 244, 0.2);
+      background: rgba(0, 0, 0, 0.6);
+      height: 300px;
+      width: 100%;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        // background: rgba(255, 255, 255, 0.05);
+      }
+    }
+
+    .staticProject1::before {
+      background: url(../media/img/travelExplore.webm) no-repeat center
+        center/cover;
+      z-index: -1;
+    }
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    // align-items: center;
+    // text-align: center;
+    // width: 50%;
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    color: #00daf4 !important;
+    font-family: "Space Mono", monospace;
+  }
+}
+
 #contact {
   // display: none;
   position: relative;
@@ -736,6 +815,22 @@ nav {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes hamburgerAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  40%,
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-50%);
   }
 }
 @keyframes showHero {

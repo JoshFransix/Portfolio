@@ -63,6 +63,18 @@ sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
 });
 
+const projectsBtn = document.querySelector(".projectsBtn");
+const staticProjects = document.querySelector(".staticProjects-content");
+
+projectsBtn.addEventListener("click", () => {
+  staticProjects.classList.toggle("show");
+  if (staticProjects.classList.contains("show")) {
+    projectsBtn.innerText = "Show Less";
+  } else {
+    projectsBtn.innerText = "Static Landing Pages";
+  }
+});
+
 // const formBtn = document.querySelector(".formBtn");
 
 // formBtn.addEventListener("click", validateInput);
