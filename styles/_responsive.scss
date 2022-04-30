@@ -42,7 +42,7 @@
   .hamburger {
     position: absolute;
     cursor: pointer;
-    right: 15%;
+    right: 10%;
     top: 0%;
     transform: translate(-5%, -50%);
     z-index: 4000;
@@ -50,7 +50,7 @@
 
   .hamburger.hamburger-open {
     position: absolute;
-    right: 15%;
+    right: 10%;
     top: 5%;
     // transform: translate(-5%, -50%);
   }
