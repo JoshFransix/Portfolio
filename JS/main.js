@@ -71,7 +71,7 @@ projectsBtn.addEventListener("click", () => {
   if (staticProjects.classList.contains("show")) {
     projectsBtn.innerText = "Show Less";
   } else {
-    projectsBtn.innerText = "Static Landing Pages";
+    projectsBtn.innerText = "Other Projects";
   }
 });
 
