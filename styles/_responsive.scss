@@ -2,11 +2,31 @@
   #header {
     padding-left: 2rem;
   }
+
+  #header.sticky {
+    backdrop-filter: none !important;
+    background: #17202a;
+  }
   .line {
     width: 30px;
     height: 3px;
     background: #00daf4;
     margin: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger.hamburger-open .line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger.hamburger-open .line:nth-child(2) {
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+  .hamburger.hamburger-open .line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+    transition: all 0.3s ease-in-out;
   }
 
   // .line .line-open {
