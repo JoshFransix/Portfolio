@@ -557,6 +557,7 @@ nav {
     grid-gap: 1rem 1rem;
     align-items: center;
     .staticProject {
+      padding: 0rem 2rem;
       color: #fff;
       position: relative;
       transition: all 0.3s ease-in-out;
@@ -575,6 +576,10 @@ nav {
 
       h2 {
         transition: all 0.3s ease-in-out;
+      }
+      p {
+        margin: 1rem 0;
+        color: #c1c2df;
       }
       &:hover h2 {
         transition: all 0.3s ease-in-out;
