@@ -40,6 +40,9 @@
   }
 
   .hamburger {
+    opacity: 0;
+    animation: menuAnimation 1.5s ease-in-out forwards;
+    animation-delay: menuAnimation 0.1s;
     position: absolute;
     cursor: pointer;
     right: 10%;
