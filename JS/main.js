@@ -87,6 +87,6 @@ projectsBtn.addEventListener("click", () => {
 //       output = `<h3>Please fill in the form correctly</h3>`;
 //       formMessage.innerHTML = output;
 //     }
-//     e.preventDefault();
+//    
 //   });
 // }
