@@ -44,12 +44,17 @@ window.addEventListener("scroll", () => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
 
-    if (scrollY >= sectionTop) {
+    if (scrollY >= sectionTop - sectionHeight / 4) {
       currentSection = section.getAttribute("id");
     }
   });
 
-  console.log(currentSection);
+  navLinks.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(currentSection)) {
+      li.classList.add("active");
+    }
+  });
 });
 
 // Intersection Observer - animate elements on scroll
