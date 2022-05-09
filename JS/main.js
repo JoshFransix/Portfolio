@@ -10,6 +10,8 @@ const header = document.querySelector("#header");
 
 const blurBg = document.querySelector(".bg-blur");
 
+const sections = document.querySelectorAll("section");
+
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
@@ -34,7 +36,23 @@ function closeMenu() {
 
 window.addEventListener("scroll", () => {
   header.classList.toggle("sticky", window.scrollY > 0);
+
+  // Highlight active link on scroll
+  let currentSection = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+
+    if (scrollY >= sectionTop) {
+      currentSection = section.getAttribute("id");
+    }
+  });
+
+  console.log(currentSection);
 });
+
+// Intersection Observer - animate elements on scroll
 
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-in");
@@ -74,19 +92,3 @@ projectsBtn.addEventListener("click", () => {
     projectsBtn.innerText = "Other Projects";
   }
 });
-
-// const formBtn = document.querySelector(".formBtn");
-
-// formBtn.addEventListener("click", validateInput);
-
-// function validateInput(e) {
-//   let output = "";
-//   formInput.forEach(function () {
-//     if (formInput.value === "") {
-//       formInput.style.borderColor = "#ce1678";
-//       output = `<h3>Please fill in the form correctly</h3>`;
-//       formMessage.innerHTML = output;
-//     }
-//    
-//   });
-// }
