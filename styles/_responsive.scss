@@ -27,7 +27,7 @@
 
   .hamburger.hamburger-open .line:nth-child(1) {
     width: 30px;
-    transform: translateY(6px) rotate(45deg);
+    transform: translateY(1px) rotate(-45deg);
     transition: all 0.3s ease-in-out;
   }
 
@@ -36,7 +36,7 @@
     transition: all 0.3s ease-in-out;
   }
   .hamburger.hamburger-open .line:nth-child(3) {
-    transform: translateY(-6px) rotate(-45deg);
+    transform: translateY(-6px) rotate(45deg);
     transition: all 0.3s ease-in-out;
   }
 
