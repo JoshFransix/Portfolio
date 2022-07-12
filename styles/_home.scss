@@ -359,18 +359,23 @@ nav {
 }
 
 #projects .projects-body .ptype-1 {
-  background: url(../media/img/word_beater.png) no-repeat center center/cover;
+  background: url(../media/img/ibloov.png) no-repeat center center/cover;
 }
 
 #projects .projects-body .ptype-2 {
-  background: url(../media/img/expense_tracker.png) no-repeat center center/cover;
+  background: url(../media/img/word_beater.png) no-repeat center center/cover;
+  z-index: 0;
 }
 
 #projects .projects-body .ptype-3 {
-  background: url(../media/img/githubFinder.png) no-repeat center center/cover;
+  background: url(../media/img/expense_tracker.png) no-repeat center center/cover;
 }
 
 #projects .projects-body .ptype-4 {
+  background: url(../media/img/githubFinder.png) no-repeat center center/cover;
+}
+
+#projects .projects-body .ptype-5 {
   background: url(../media/img/mysite.png) no-repeat center center/cover;
 }
 
@@ -392,7 +397,7 @@ nav {
 }
 
 #projects .first-project .projects-body-info {
-  // z-index: 1;
+  z-index: 1;
   position: absolute;
   right: 0%;
   margin: auto;
