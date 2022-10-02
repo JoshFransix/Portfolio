@@ -227,11 +227,9 @@ nav {
 
 // ABOUT SECTION
 #about {
-  // display: none;
   position: relative;
   width: 60%;
   margin: auto;
-  // height: 90vh;
   margin-top: 9rem;
   padding-top: 8rem;
   font-family: "Nunito Sans";
@@ -260,15 +258,15 @@ nav {
 
 #about .about-content .about-body {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
-  // font-family: "Nunito", monospace;
 }
+
 
 #about .about-content .about-body .about-tech {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 
 #about .about-content .about-body .about-tech h1 {
@@ -318,11 +316,8 @@ nav {
 }
 
 #projects {
-  // display: none;
-  // position: relative;
   width: 65%;
   margin: auto;
-  // height: 90vh;
   font-family: "Nunito Sans";
   margin-top: 9rem;
   padding-top: 8rem;
@@ -339,50 +334,48 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-// #projects .projects-body .projects-body-img {
-//   position: absolute;
-//   display: inl ine;
-//   width: 100%;
-//   height: 90%;
-// }
 
 #projects .projects-body .projects-body-img {
   margin: auto;
   position: absolute;
-  // right: 0;
-  // content: "";
   width: 60%;
   height: 120%;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
-  // z-index: 1;
 }
 
-#projects .projects-body .ptype-1 {
+#projects .projects-body .p-ibloov {
   background: url(../media/img/ibloov.png) no-repeat center center/cover;
 }
 
-#projects .projects-body .ptype-2 {
+#projects .projects-body .p-text-you {
+  background: url(../media/img/text-you-2.jpeg) no-repeat center center/cover;
+}
+
+#projects .projects-body .p-speed-type {
   background: url(../media/img/word_beater.png) no-repeat center center/cover;
   z-index: 0;
 }
 
-#projects .projects-body .ptype-3 {
+#projects .projects-body .p-you-commerce {
+  background: url(../media/img/youCommerce.jpeg) no-repeat center center/cover;
+  z-index: 0;
+}
+
+#projects .projects-body .p-expense-tracker {
   background: url(../media/img/expense_tracker.png) no-repeat center center/cover;
 }
 
-#projects .projects-body .ptype-4 {
+#projects .projects-body .p-find-git-user {
   background: url(../media/img/githubFinder.png) no-repeat center center/cover;
 }
 
-#projects .projects-body .ptype-5 {
+#projects .projects-body .p-portfolio {
   background: url(../media/img/mysite.png) no-repeat center center/cover;
 }
 
 #projects .projects-body .projects-body-img a {
-  // z-index: 1;
   border-radius: 5px;
-  // position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -406,7 +399,6 @@ nav {
   justify-content: space-between;
   height: 100%;
   width: 50%;
-  // width: -130%;
   text-align: right;
 }
 
@@ -432,18 +424,11 @@ nav {
 }
 
 #projects .projects-body-info .projects-info-title {
-  // position: relative;
-  // display: inline-block;
-  // justify-content: flex-end;
-  // align-items: flex-start;
-  // margin: auto;
-  // width: 10%;
   color: var(--primary-color);
   font-size: 28px;
   transition: all 0.2s ease-in-out;
   font-weight: bolder;
   margin-bottom: 1rem;
-  // text-align: right;
 }
 
 #projects .projects-body-info a:hover {
@@ -451,33 +436,19 @@ nav {
 }
 
 #projects .first-project .projects-body-info .p-2 {
-  // position: relative;
-  // display: none;
-  // z-index: 1;
-  // right: -100%;
-  // margin: auto;
   background: rgb(24, 35, 48);
   opacity: 1;
   padding: 2rem;
   border-radius: 5px;
   box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.3);
-  // width: 100%;
-  // text-align: left;
 }
 
 #projects .second-project .projects-body-info .p-2 {
-  // position: relative;
-  // display: none;
-  // z-index: 1;
-  // left: 40%;
-  // margin: auto;
   background: rgb(24, 35, 48);
   opacity: 1;
   padding: 2rem;
   border-radius: 5px;
   box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.3);
-  // width: 100%;
-  // text-align: left;
 }
 
 #projects .first-project .projects-body-info .projects-code-language {
@@ -496,19 +467,14 @@ nav {
 }
 
 #projects .second-project .projects-body-info .projects-code-language {
-  // position: relative;
-  // margin: auto;
   display: flex;
-  // width: 10%;
-  // justify-content: flex-start;
-  // align-items: flex-end;
   margin: 1rem 0;
   opacity: 0.6;
   color: #c1c2df;
   font-weight: 100;
   font-size: 16px;
   line-height: 25px;
-
+  text-align: right;
   font-family: "Space Mono", monospace;
 }
 
@@ -642,17 +608,27 @@ nav {
       }
     }
 
-    .staticProject1::before {
+    .word-beater::before {
+      background: url(../media/img/word_beater.png) no-repeat center center/cover;
+      z-index: -1;
+    }
+
+    .josh-bars::before {
+      background: url(../media/img/joshbars.jpeg) no-repeat center center/cover;
+      z-index: -1;
+    }
+
+    .explore-travel::before {
       background: url(../media/img/explore1.png) no-repeat center center/cover;
       z-index: -1;
     }
 
-    .staticProject2::before {
+    .woodies::before {
       background: url(../media/img/cover_woodies.png) no-repeat center center/cover;
       z-index: -1;
     }
 
-    .staticProject3::before {
+    .trafalgar::before {
       background: url(../media/img/trafalgar1.png) no-repeat center center/cover;
       z-index: -1;
     }
@@ -790,7 +766,7 @@ nav {
   text-align: center;
   margin: auto;
   width: 80%;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Space Mono";
 }
 

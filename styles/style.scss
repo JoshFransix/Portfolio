@@ -10,7 +10,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
+
   // overflow-y: hidden;
 
   ::selection {
@@ -33,12 +34,11 @@
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(transparent, #00daf4);
   transition: 0.6s;
+  width: 7px;
 }
 
 html,
 body {
-  // max-width: 100%;
-  // max-height: 100%;
   overflow-x: hidden;
 }
 
@@ -46,8 +46,6 @@ body {
   background: #17202a;
   transition: all 0.3s ease-in-out;
   font-family: "Nunito";
-  // font-family: "Poppins";
-  // overflow-x: hidden;
   color: #c1c2df;
 }
 
@@ -55,29 +53,11 @@ body.lock-scroll {
   height: 100%;
 }
 
-// body.bg-blur {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   background: transparent;
-//   height: 100%;
-//   width: 100%;
-//   z-index: -100;
-// }
-
-// .bg-blur.open {
-//   background: #00daf4;
-//   z-index: 2000;
-// }
-
 a {
   display: inline-block;
   text-decoration: none;
 }
 
-// a:hover ~ .cursor {
-//   transform: scale(6) !important;
-// }
 
 ul {
   list-style: none;
@@ -101,39 +81,13 @@ ul {
   filter: blur(2px);
 }
 
-// .lock-scroll {
-//   overflow: hidden !important;
-//   // height: 100vh;
-//   touch-action: none;
-//   // position: fixed;
-// }
-
-// .wp-caption img[class="wp-image-"] {
-//   display: block;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
-// .cursor {
-//   position: fixed;
-//   width: 20px;
-//   height: 20px;
-//   border-radius: 50%;
-//   background: transparent;
-//   border: 1px solid #00daf4;
-//   transition: 0.1s;
-//   // transform: translate(-50%, -50%);
-//   // pointer-events: none;
-//   mix-blend-mode: difference;
-//   // z-index: 1;
-// }
-
 .p-1 {
   font-size: 17px;
   opacity: 0.9;
   font-weight: 100;
   line-height: 28px;
 }
+
 .p-2 {
   opacity: 0.6;
   color: #c1c2df;
