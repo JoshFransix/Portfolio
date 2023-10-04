@@ -428,8 +428,8 @@ nav {
   background: url(../media/img/jotloom-1.png) no-repeat center center/cover;
 }
 
-#projects .projects-body .p-text-you {
-  background: url(../media/img/text-you-2.jpeg) no-repeat center center/cover;
+#projects .projects-body .p-prime {
+  background: url(../media/img/primetele.png) no-repeat center center/cover;
 }
 
 #projects .projects-body .p-speed-type {
@@ -683,6 +683,10 @@ nav {
 }
 #moreProjects .staticProjects .trafalgar::before {
   background: url(../media/img/trafalgar1.png) no-repeat center center/cover;
+  z-index: -1;
+}
+#moreProjects .staticProjects .tictac::before {
+  background: url(../media/img/tictac.png) no-repeat center center/cover;
   z-index: -1;
 }
 #moreProjects button {
