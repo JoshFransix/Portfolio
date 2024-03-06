@@ -432,26 +432,16 @@ nav {
   background: url(../media/img/corniehealth.png) no-repeat center center/cover;
 }
 
+#projects .projects-body .p-ydev {
+  background: url(../media/img/ydev-sc.png) no-repeat center center/cover;
+}
+
 #projects .projects-body .p-jotloom {
   background: url(../media/img/jotloom-1.png) no-repeat center center/cover;
 }
 
 #projects .projects-body .p-prime {
   background: url(../media/img/primetele.png) no-repeat center center/cover;
-}
-
-#projects .projects-body .p-speed-type {
-  background: url(../media/img/word_beater.png) no-repeat center center/cover;
-  z-index: 0;
-}
-
-#projects .projects-body .p-you-commerce {
-  background: url(../media/img/youCommerce.jpeg) no-repeat center center/cover;
-  z-index: 0;
-}
-
-#projects .projects-body .p-expense-tracker {
-  background: url(../media/img/expense_tracker.png) no-repeat center center/cover;
 }
 
 #projects .projects-body .p-find-git-user {
@@ -541,6 +531,7 @@ nav {
 
 #projects .first-project .projects-body-info .projects-code-language {
   display: flex;
+  justify-content: flex-end;
   margin: 1rem 0;
   opacity: 0.6;
   color: #c1c2df;
@@ -559,7 +550,7 @@ nav {
   font-weight: 100;
   font-size: 16px;
   line-height: 25px;
-  text-align: right;
+  text-align: left !important;
   font-family: "Space Mono", monospace;
 }
 
@@ -673,8 +664,20 @@ nav {
 #moreProjects .staticProjects .staticProject .projects-redirect a i:nth-child(1) {
   margin-right: 0.5rem;
 }
+#moreProjects .staticProjects .expense-tracker::before {
+  background: url(../media/img/expense_tracker.png) no-repeat center center/cover;
+  z-index: -1;
+}
+#moreProjects .staticProjects .find-git::before {
+  background: url(../media/img/githubFinder.png) no-repeat center center/cover;
+  z-index: -1;
+}
 #moreProjects .staticProjects .word-beater::before {
   background: url(../media/img/word_beater.png) no-repeat center center/cover;
+  z-index: -1;
+}
+#moreProjects .staticProjects .you-commerce::before {
+  background: url(../media/img/youCommerce.jpeg) no-repeat center center/cover;
   z-index: -1;
 }
 #moreProjects .staticProjects .josh-bars::before {
